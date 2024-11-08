@@ -6,7 +6,7 @@
 /*   By: ayirmili <ayirmili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 20:40:57 by ayirmili          #+#    #+#             */
-/*   Updated: 2024/11/08 12:57:30 by ayirmili         ###   ########.fr       */
+/*   Updated: 2024/11/08 14:22:01 by ayirmili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,6 @@ int	handle_export(t_data *data, char *args)
 	}
 	else if (ft_strchr(args, '=') == NULL)
 		set_export_var(data, args, NULL, false);
-
 	return (return_status);
 }
 

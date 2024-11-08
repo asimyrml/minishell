@@ -38,3 +38,30 @@
 
  - lst_delone lardaki kullanılmayan void(*del) fonksiyonların silinmesi gerekiyor.
  - wall wextra werror ile kontrol et
+
+
+
+
+
+
+Test 135: ❌ $EMPTY echo hi 
+mini output = ()
+bash output = (hi)
+mini error = (exit)
+bash error = ()
+
+Test 130: ❌ cat <minishell.h>./outfiles/outfile 
+Only in ./mini_outfiles: outfile
+mini outfiles:
+bash outfiles:
+cat: ./bash_outfiles/*: No such file or directory
+mini error = ( No such file or directory exit)
+bash error = ( No such file or directory)
+
+Test 104: ❌ cat <missing >./outfiles/outfile01 
+Only in ./mini_outfiles: outfile01
+mini outfiles:
+bash outfiles:
+cat: ./bash_outfiles/*: No such file or directory
+mini error = ( No such file or directory exit)
+bash error = ( No such file or directory)
