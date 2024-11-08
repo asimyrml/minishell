@@ -6,7 +6,7 @@
 /*   By: ayirmili <ayirmili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 18:31:19 by beyarsla          #+#    #+#             */
-/*   Updated: 2024/11/07 22:06:46 by ayirmili         ###   ########.fr       */
+/*   Updated: 2024/11/08 12:57:13 by ayirmili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,7 +100,7 @@ int	builtin_export(t_data *data, char **args)
 		return (write_export(data, NULL));
 	while (args[i])
 	{
-		handle_export(data, args[i]);
+		return_status = handle_export(data, args[i]);
 		i++;
 	}
 	return (return_status);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cd.c                                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: beyarsla <beyarsla@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ayirmili <ayirmili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 12:04:35 by beyarsla          #+#    #+#             */
-/*   Updated: 2024/11/08 12:04:36 by beyarsla         ###   ########.fr       */
+/*   Updated: 2024/11/08 12:50:31 by ayirmili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,8 +95,6 @@ int	builtin_cd(t_data *data, char **args)
 			return (errmsg_cmd("cd", NULL, "HOME not set", EXIT_FAILURE));
 		return (!change_dir(data, path));
 	}
-	if (args[2])
-		return (errmsg_cmd("cd", NULL, "too many arguments", EXIT_FAILURE));
 	if (ft_strncmp(args[1], "-", 2) == 0)
 	{
 		path = env_find_value(data->env, "OLDPWD");
