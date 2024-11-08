@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minishell.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: beyarsla <beyarsla@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ayirmili <ayirmili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 16:06:47 by ayirmili          #+#    #+#             */
-/*   Updated: 2024/11/08 12:03:51 by beyarsla         ###   ########.fr       */
+/*   Updated: 2024/11/08 12:57:44 by ayirmili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -227,7 +227,7 @@ int						builtin_exit(t_data *data, char **args, int exit_code);
 int						set_env_var(t_data *data, char *key, char *env_value);
 int						set_export_var(t_data *data, char *key, char *env_value, bool control);
 bool					is_valid_env_key(char *var);
-void					handle_export(t_data *data, char *args);
+int						handle_export(t_data *data, char *args);
 char					**get_key_value_pair(char *arg);
 int						update_or_add_export_env(t_data *data, char *key, char *tmp, int index);
 char					*create_tmp_value(char *env_value, bool control);
