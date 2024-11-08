@@ -6,7 +6,7 @@
 /*   By: beyarsla <beyarsla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 12:06:21 by beyarsla          #+#    #+#             */
-/*   Updated: 2024/11/08 12:06:23 by beyarsla         ###   ########.fr       */
+/*   Updated: 2024/11/08 14:36:52 by beyarsla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ int	create_children(t_data *data, int exit_code)
 	t_command	*cmd;
 
 	cmd = data->cmd;
-	global_signal = IN_CAT;
+	g_global_signal = IN_CAT;
 	while (data->pid != 0 && cmd)
 	{
 		data->pid = fork();

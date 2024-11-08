@@ -12,7 +12,7 @@ builtins/cd.c builtins/cd_utils.c builtins/echo.c builtins/env.c builtins/export
 builtins/unset.c builtins/exit.c src/executor/execute_cmd.c src/executor/execute_cmd_utils.c src/executor/execute_cmd_utils2.c\
 builtins/export_utils.c
 
-CFLAGS = -Wall -Wextra -Werror -g #-fsanitize=address # MallocStackLogging=1
+CFLAGS = -Wall -Wextra -Werror -g
 LIBFT = lib/libft/libft.a
 READLINE = lib/readline/lib/libreadline.a
 
