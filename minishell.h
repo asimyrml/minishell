@@ -6,7 +6,7 @@
 /*   By: ayirmili <ayirmili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 16:06:47 by ayirmili          #+#    #+#             */
-/*   Updated: 2024/11/08 12:57:44 by ayirmili         ###   ########.fr       */
+/*   Updated: 2024/11/08 13:23:38 by ayirmili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,6 +86,7 @@ typedef struct s_io_fds
 	char				*outfile;
 	char				*heredoc_delimiter;
 	bool				heredoc_quotes;
+	bool				open_check;
 	int					fd_in;
 	int					fd_out;
 	int					stdin_backup;

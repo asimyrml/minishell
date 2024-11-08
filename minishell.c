@@ -6,7 +6,7 @@
 /*   By: ayirmili <ayirmili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:36:36 by ayirmili          #+#    #+#             */
-/*   Updated: 2024/11/08 11:51:13 by ayirmili         ###   ########.fr       */
+/*   Updated: 2024/11/08 14:05:44 by ayirmili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ void	mini_interactive(t_data *data, int exit_code)
 		{
 			add_history(data->user_input);
 			if (parse_input(data, exit_code) == SUCCESS)
+				
 				exit_code = execute(data, exit_code);
 			else
 				exit_code = 1;
