@@ -6,7 +6,7 @@
 /*   By: ayirmili <ayirmili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 00:46:38 by beyza             #+#    #+#             */
-/*   Updated: 2024/11/07 22:45:10 by ayirmili         ###   ########.fr       */
+/*   Updated: 2024/11/08 11:59:18 by ayirmili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ bool	heredoc_parent_process(int pid)
 	return_status = false;
 	global_signal = 2;
 	waitpid(pid, &status, 0);
-	if (WIFEXITED(status))
+	if (WIFEXITED(status) && global_signal != 13)
 		return_status = (WEXITSTATUS(status) == 0);
 	return (return_status);
 }
