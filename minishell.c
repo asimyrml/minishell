@@ -6,7 +6,7 @@
 /*   By: ayirmili <ayirmili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:36:36 by ayirmili          #+#    #+#             */
-/*   Updated: 2024/11/07 22:45:10 by ayirmili         ###   ########.fr       */
+/*   Updated: 2024/11/08 11:51:13 by ayirmili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,16 +24,7 @@ void	mini_interactive(t_data *data, int exit_code)
 			ft_putendl_fd("exit", 2);
 			break ;
 		}
-		if (global_signal == 17)
-		{
-			exit_code = 1;
-			global_signal = 0;
-		}
-		if (global_signal == 13)
-		{
-			exit_code = 130;
-			global_signal = 0;
-		}
+		exit_code = main_signal_control(exit_code);
 		if (*data->user_input)
 		{
 			add_history(data->user_input);

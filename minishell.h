@@ -6,7 +6,7 @@
 /*   By: ayirmili <ayirmili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 16:06:47 by ayirmili          #+#    #+#             */
-/*   Updated: 2024/11/07 22:46:45 by ayirmili         ###   ########.fr       */
+/*   Updated: 2024/11/08 11:51:56 by ayirmili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,6 +118,7 @@ typedef struct s_data
 
 // signals functions
 void					set_signals(void);
+int						main_signal_control(int exit_code);
 
 // free.c
 void					free_tmp(void *tmp);

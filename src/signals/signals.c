@@ -6,11 +6,26 @@
 /*   By: ayirmili <ayirmili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:39:05 by ayirmili          #+#    #+#             */
-/*   Updated: 2024/11/07 22:45:10 by ayirmili         ###   ########.fr       */
+/*   Updated: 2024/11/08 11:54:50 by ayirmili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../minishell.h"
+
+int	main_signal_control(int exit_code)
+{
+	if (global_signal == 17)
+	{
+		exit_code = 1;
+		global_signal = 0;
+	}
+	if (global_signal == 13)
+	{
+		exit_code = 130;
+		global_signal = 0;
+	}
+	return (exit_code);
+}
 
 void	sigint_reset(int signal_no)
 {
