@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minishell.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayirmili <ayirmili@student.42.fr>          +#+  +:+       +#+        */
+/*   By: beyarsla <beyarsla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 16:06:47 by ayirmili          #+#    #+#             */
-/*   Updated: 2024/11/08 11:51:56 by ayirmili         ###   ########.fr       */
+/*   Updated: 2024/11/08 12:03:51 by beyarsla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@
 # endif
 
 # define HEREDOC_NAME "/tmp/.minishell_heredoc_"
-# define PROMPT "\001\e[45m\002>>> \001\e[0m\e[33m\002 Minishell 🤠>$ \001\e[0m\002"
+# define PROMPT "\001\e[45m\002>>> \001\e[0m\e[33m\002 Minishell >$ \001\e[0m\002"
 
 # define SUCCESS 1
 # define FAILURE 0
