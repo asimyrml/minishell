@@ -6,7 +6,7 @@
 /*   By: beyarsla <beyarsla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:36:36 by ayirmili          #+#    #+#             */
-/*   Updated: 2024/11/08 14:36:52 by beyarsla         ###   ########.fr       */
+/*   Updated: 2024/11/08 15:27:04 by beyarsla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ void	mini_interactive(t_data *data, int exit_code)
 				exit_code = 1;
 			free_data(data, false);
 		}
+		else
+			free_data(data, false);
 	}
 }
 
